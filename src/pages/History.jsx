@@ -39,7 +39,7 @@ export default function History() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-4rem)]">
-        <div className="w-12 h-12 border-4 border-gray-200 dark:border-indigo-500/30 border-t-indigo-600 dark:border-t-indigo-500 rounded-full animate-spin"></div>
+        <div className="w-12 h-12 border-4 border-gray-200 dark:border-orange-500/30 border-t-orange-600 dark:border-t-orange-500 rounded-full animate-spin"></div>
       </div>
     );
   }
@@ -63,15 +63,15 @@ export default function History() {
             {trips.map((trip, index) => (
               <div 
                 key={trip.id} 
-                className="bg-white dark:bg-neutral-800/40 border border-gray-200 dark:border-white/10 rounded-3xl overflow-hidden hover:border-indigo-500/50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+                className="bg-white dark:bg-neutral-800/40 border border-gray-200 dark:border-white/10 rounded-3xl overflow-hidden hover:border-orange-500/50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="p-8 border-b border-gray-100 dark:border-white/5">
                   <div className="flex justify-between items-start mb-5">
-                    <h2 className="text-2xl font-black text-gray-900 dark:text-white truncate pr-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                    <h2 className="text-2xl font-black text-gray-900 dark:text-white truncate pr-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
                       {trip.destination}
                     </h2>
-                    <span className="bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 text-xs font-black px-3 py-1.5 rounded-lg whitespace-nowrap">
+                    <span className="bg-orange-100 dark:bg-orange-500/20 text-orange-700 dark:text-orange-300 text-xs font-black px-3 py-1.5 rounded-lg whitespace-nowrap">
                       {trip.days} Days
                     </span>
                   </div>

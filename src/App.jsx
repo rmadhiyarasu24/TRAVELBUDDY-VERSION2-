@@ -13,7 +13,7 @@ function App() {
   return (
     <ThemeProvider>
       <AuthProvider>
-        <div className="min-h-screen bg-gray-50 text-gray-900 dark:bg-neutral-900 dark:text-neutral-100 font-sans selection:bg-indigo-500/30 transition-colors duration-500">
+        <div className="min-h-screen bg-gray-50 text-gray-900 dark:bg-neutral-900 dark:text-neutral-100 font-sans selection:bg-orange-500/30 transition-colors duration-500">
           <Navbar />
           <main>
             <Routes>
